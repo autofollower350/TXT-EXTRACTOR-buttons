@@ -226,7 +226,9 @@ back_button  = [[
 
 @app.on_message(filters.command("start"))
 async def start(_,message):
-  join = await subscribe(_,message)
+  # join = await subscribe(_,message)  <-- Iske aage # laga dein
+join = True                          <-- Ye line add karein
+
   if join ==1:
     return
   await message.reply_photo(photo=random.choice(script.IMG), 
