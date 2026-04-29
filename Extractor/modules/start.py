@@ -1388,13 +1388,11 @@ back_button  = [[
 
 @app.on_message(filters.command("start"))
 async def start(_, message):
-    # join = await subscribe(_, message)
-    join = True                          # Ye line aur niche wali 'if' line ek hi alignment mein honi chahiye
+    join = True
     
-    if join:                             # 'if' statement bilkul 'join = True' ke niche start hona chahiye
-        return
-
-  await message.reply_photo(photo=random.choice(script.IMG), 
+    if join:
+        await message.reply_photo(photo=random.choice(script.IMG))
+ 
                             caption=script.START_TXT.format(message.from_user.mention),
                             reply_markup=buttons)
 
