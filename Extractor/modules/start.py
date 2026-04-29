@@ -1178,22 +1178,6 @@ async def handle_callback(_, query):
         await appex_v3_txt(app, query.message, api, name) 
 
 
-
-
-
-
-  
-
-                
-  
-    
-      
-   
-
-  
-
-  
-
     elif query.data=="close_data":
         await query.message.delete()
         await query.message.reply_to_message.delete()
@@ -1384,8 +1368,6 @@ back_button  = [[
 # ------------------------------------------------------------------------------- #
 
 
-
-
 @app.on_message(filters.command("start"))
 async def start(_, message):
     join = True
@@ -1395,13 +1377,6 @@ async def start(_, message):
  
                             caption=script.START_TXT.format(message.from_user.mention),
                             reply_markup=buttons)
-
-
-
-
-
-
-
 
 @app.on_callback_query()
 async def handle_callback(_, query):
