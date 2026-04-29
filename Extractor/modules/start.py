@@ -227,7 +227,7 @@ back_button  = [[
 @app.on_message(filters.command("start"))
 async def start(_,message):
       # join = await subscribe(_, message)
-join = True
+    join = True
                           
 
   if join ==1:
