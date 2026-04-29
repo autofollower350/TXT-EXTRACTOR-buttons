@@ -2,7 +2,7 @@ import os
 from os import getenv
 
 API_ID = int(os.environ.get("28590286", ""))  # Replace "123456" with your actual api_id or use .env
-API_HASH = 6a68cc6b41219dc57b7a52914032f92f", "")
+API_HASH = os.environ.get("6a68cc6b41219dc57b7a52914032f92f", "")
 BOT_TOKEN = os.environ.get("8021113365:AAGQjYo5uaSEsZbycIRXEw-W1NLpZ6Om2KQ", "")
 
 OWNER_ID = int(os.environ.get("6117445553", ""))  # Your Telegram user ID
