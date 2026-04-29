@@ -1367,12 +1367,11 @@ back_button  = [[
 
 # ------------------------------------------------------------------------------- #
 
-
 @app.on_message(filters.command("start"))
 async def start(_, message):
     join = True
     
-        if join:
+    if join:
         await message.reply_photo(
             photo=random.choice(script.IMG),
             caption=script.START_TXT.format(message.from_user.mention),
