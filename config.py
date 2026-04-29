@@ -9,3 +9,4 @@ MONGO_URL = "mongodb+srv://Kailash979933:Lions98@cluster0.af4v4ge.mongodb.net/?a
 # Agar aapko SUDO_USERS ya CHANNEL_ID chahiye, toh unhe niche uncomment karein:
 SUDO_USERS = [6117445553] 
 CHANNEL_ID = -1003561882254
+PREMIUM_LOGS = None
