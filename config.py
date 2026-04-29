@@ -8,5 +8,5 @@ MONGO_URL = "mongodb+srv://Kailash979933:Lions98@cluster0.af4v4ge.mongodb.net/?a
 
 # Import errors se bachne ke liye inhe empty list ya string mein rakhein
 SUDO_USERS = []
-CHANNEL_ID = -1000000000000  # Agar channel ID nahi hai toh ye placeholder use karein
+CHANNEL_ID = -1003826155723  # Agar channel ID nahi hai toh ye placeholder use karein
 PREMIUM_LOGS = ""
