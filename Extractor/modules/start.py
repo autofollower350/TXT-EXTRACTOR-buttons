@@ -1372,11 +1372,12 @@ back_button  = [[
 async def start(_, message):
     join = True
     
-    if join:
-        await message.reply_photo(photo=random.choice(script.IMG))
- 
-                            caption=script.START_TXT.format(message.from_user.mention),
-                            reply_markup=buttons)
+        if join:
+        await message.reply_photo(
+            photo=random.choice(script.IMG),
+            caption=script.START_TXT.format(message.from_user.mention),
+            reply_markup=buttons
+        )
 
 @app.on_callback_query()
 async def handle_callback(_, query):
