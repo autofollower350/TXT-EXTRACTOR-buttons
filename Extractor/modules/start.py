@@ -226,7 +226,7 @@ back_button  = [[
 
 @app.on_message(filters.command("start"))
 async def start(_, message):
-    # join = await subscribe(_, message)  <-- Ye comment out rahegi
+    # join = await subscribe(_, message)
     join = True                          # Ye line aur niche wali 'if' line ek hi alignment mein honi chahiye
     
     if join:                             # 'if' statement bilkul 'join = True' ke niche start hona chahiye
